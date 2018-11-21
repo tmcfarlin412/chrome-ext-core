@@ -1,0 +1,25 @@
+{
+    "name": "Chrome Extension Core",
+    "version": "0.3",
+    "description": "Provide common utilitites to Chrome extensions and apps",
+    "manifest_version": 2,
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "/release/chrome-ext-core/Core.js",
+            "/release/chrome-ext-core/background.js",
+
+            "/js/common/test.js",
+            "/js/background/test.js"
+        ],
+        "persistent": false
+    },
+    "icons": {
+        "16": "/images/icon16.png",
+        "32": "/images/icon32.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
+    }
+}
